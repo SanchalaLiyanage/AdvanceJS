@@ -9,3 +9,4 @@ let Even = arr.filter( (val) =>
 })
 
 console.log(Even)
+
