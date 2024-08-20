@@ -10,11 +10,25 @@
 
     <script>
         
-       
-        let fname = prompt("Enter Your Full Name: ")
-        let fname1 = fname.replace(/ /g, '');
-        let uname = console.log("@"+fname1+""+fname1.length+"")
+        let n = prompt ("Enter a value :")
+        let array1 = []
+
+        for (let i = 1; i<=n; i++ ){
+            array1[i-1] = i;
+        }
+
+        const output = array1.reduce ((result,current) =>{
+            return result + current
+        })
+
+        console.log (output)
+
+        const output2 = array1.reduce((result, current) =>{
+        return result*current
+        })
+
         
+        console.log (output2)
     </script>
 </body>
 </html>
